@@ -137,12 +137,12 @@ MAX30102 Sensor
        │
        ▼
 ┌──────────────┐     ┌──────────────────┐     ┌───────────────┐
-│ Data Collect  │────▶│  SpO2 Algorithm  │────▶│  ML Inference │
-│ (10 ms loop)  │     │  (Maxim Library)  │     │  (every 5 s)  │
+│ Data Collect │───▶│  SpO2 Algorithm  │────▶│  ML Inference │
+│ (10 ms loop) │     │  (Maxim Library) │     │  (every 5 s)  │
 └──────────────┘     └──────────────────┘     └───────┬───────┘
                                                       │
-                                           ┌──────────┴──────────┐
-                                           │                     │
+                                           ┌──────────┴─────────┐
+                                           │                    │
                                       ┌────▼────┐         ┌─────▼─────┐
                                       │ Buzzer  │         │ JSON API  │
                                       │ Alert   │         │  /data    │
